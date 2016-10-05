@@ -1,0 +1,9 @@
+celery multi start 10 -A proj -l info
+
+celery multi stop w1 -A proj -l info
+
+celery multi start 1 -A proj -l info -c4 --pidfile=/var/run/celery/%n.pid
+celery multi restart 1 --pidfile=/var/run/celery/%n.pid
+
+to stop worker:
+ps auxww | grep 'celery worker' | awk '{print $2}' | xargs kill -9

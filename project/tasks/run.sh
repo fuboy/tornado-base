@@ -1,0 +1,1 @@
+celery multi start 4 -A email_tasks -l info -c4 --pidfile=/var/run/celery/%%n.pid

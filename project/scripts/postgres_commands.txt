@@ -1,0 +1,14 @@
+CREATE TYPE mood AS ENUM ('sad', 'ok', 'happy');
+ALTER TYPE enum_type ADD VALUE 'new_value' BEFORE 'old_value';
+ALTER TYPE some_enum_type rename to _some_enum_type;
+
+##########################################################
+The quick fix is to edit the migration file and add
+
+create_type=False
+
+to the end of the constructor:
+
+sa.Column('zone', postgresql.ENUM('uk_mainland', 'uk_channel_islands', name='zone', create_type=False), nullable=False)
+
+###########################################################

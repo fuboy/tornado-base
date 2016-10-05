@@ -1,0 +1,6 @@
+alembic init alembic
+alembic revision --autogenerate -m "Add name"
+alembic upgrade head
+alembic downgrade -1
+alembic current
+alembic history

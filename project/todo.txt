@@ -1,0 +1,32 @@
+1. Alembic config => OK
+2. tornado - sqlalchemy config - session => OK
+3. session redis => OK
+4. auth - login - insta, google, ...
+5. manage functions => OK
+6. template engine ?! - Config - utility function
+7. email - tornado => OK
+8. wtforms with tornado => OK
+9. tornado utils ... redirect function => OK
+10. SphinX search engine => OK
+11. cash on redis => write any lib for tornado open source cash page on redis for example using tornado-redis
+                    https://gist.github.com/cloverstd/10712505
+12. babel - multi lang
+13. favicon
+14. ACL
+15. Momoko with sqlalchemy
+17. robots & sitemaps write
+18. query => filter - sort , relational , {include , exclude} => OK {if angularjs used}
+19. url map => OK
+20. Log kibana => map => peyk get food check here is user!!!
+21. load template from redis => BaseLoader overwrite
+22. Get Current user call every request!!! go up time!!! why? => in render function call current_user => OK
+23. Instagram Api Lib used asyncclient on tornado!!!
+24. Security check - access users
+25. SqlAlchemy ORM Check performance problems
+
+
+##########################
+26. Solve csrf protection - wtforms
+// sql injection- ok
+//click jacking
+//xss
